@@ -13,11 +13,11 @@ function App() {
       </GridItem>
       <Show above="lg">
         <GridItem area="aside" bg="gold">
-          aside
+          Aside
         </GridItem>
       </Show>
       <GridItem area="mian" bg="dodgerblue">
-        Nav
+        Main
       </GridItem>
     </Grid>
   );

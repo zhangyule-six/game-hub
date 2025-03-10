@@ -13,6 +13,7 @@ import { Genre } from "./useGenres";
   background_image: string;
   parent_platforms:{platform:Platform}[];
   metacritic:number;
+  rating_top: number;
 }
 
 const useGames =(gameQuery:GameQuery) =>
@@ -22,6 +23,7 @@ const useGames =(gameQuery:GameQuery) =>
       platforms:gameQuery.platform?.id,
       ordering:gameQuery.sortOrder,
       search: gameQuery.searchText
+
     }},
     [gameQuery ])
 export default useGames;
